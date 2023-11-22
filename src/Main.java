@@ -10,7 +10,9 @@ public class Main {
         Funcionario designer = new Funcionario("Designer");
         Funcionario administrativo = new Funcionario("Auxiliar Administrativo");
         Funcionario DBA = new Funcionario("Administrador de BD");
+        Funcionario gerente = new Funcionario("Gerente");
         // Adicione outros funcionários conforme necessário
+                
 
        System.out.println("Com o Total de " + Funcionario.contador + " Funcionarios, Fechamos 100% de participação sendo " + 100/Funcionario.contador + "% de contribuição de cada Cargo." + "\n");
 
@@ -18,7 +20,7 @@ public class Main {
         Ferramenta photoshop = new Ferramenta("Photoshop");
         Ferramenta excel = new Ferramenta("Excel");
         Ferramenta SGBDs = new Ferramenta("MySQL");
-
+        Ferramenta totvs = new Ferramenta("TOTVS");
 
         // Adicione outras ferramentas conforme necessário
 
@@ -26,6 +28,7 @@ public class Main {
         designer.escolherFerramenta(photoshop);
         administrativo.escolherFerramenta(excel);
         DBA.escolherFerramenta(SGBDs);
+        gerente.escolherFerramenta(totvs);
 
         // Cada funcionário escolhe sua ferramenta
 
@@ -33,6 +36,7 @@ public class Main {
         calcularPorcentagem(designer);
         calcularPorcentagem(administrativo);
         calcularPorcentagem(DBA);
+        calcularPorcentagem(gerente);
         // Calcular e exibir porcentagem para cada funcionário
     }
 
