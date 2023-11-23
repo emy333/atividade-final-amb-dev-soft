@@ -1,5 +1,5 @@
 class Funcionario {
-    // contador
+    // contador de objetos
     public static int contador = 0 ;
 
     private String cargo;
