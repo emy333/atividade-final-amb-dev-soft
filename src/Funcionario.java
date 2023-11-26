@@ -4,6 +4,7 @@ class Funcionario {
 
     private String cargo;
     private Ferramenta ferramenta;
+    private Demanda demanda;
 
     public Funcionario(String cargo) {
         this.cargo = cargo;
@@ -14,10 +15,17 @@ class Funcionario {
         this.ferramenta = ferramenta;
     }
 
+    public void reaizarDemanda(Demanda demanda) {
+        this.demanda = demanda;
+
+    }
     public Ferramenta getFerramenta() {
         return this.ferramenta;
     }
 
+     public Demanda getDemanda() {
+        return this.demanda;
+    }
     public String getCargo() {
         return this.cargo;
     }
